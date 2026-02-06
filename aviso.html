@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Mauriz Fisioterapia</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light font-display text-text-main transition-colors duration-300 ">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <!-- Header -->
+        <header
+        class="fixed w-full top-0 z-50 flex items-center justify-between border-b border-solid border-primary/10 bg-background-light/90 backdrop-blur-md px-6 md:px-10 py-4">
+
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+            <a href="/" class="pointer">
+            <h1 class="text-xl font-extrabold tracking-tight text-text-main">
+                Mauriz <span class="text-primary">Fisioterapia</span>
+            </h1>
+            </a>
+        </div>
+
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex flex-1 justify-center gap-8">
+            <a class="text-sm font-semibold hover:text-primary transition-colors" href="/#QuienesSomos">Quiénes Somos</a>
+            <a class="text-sm font-semibold hover:text-primary transition-colors" href="/#Terapias">Terapias</a>
+            <a class="text-sm font-semibold hover:text-primary transition-colors" href="/#Horario">Horario</a>
+        </nav>
+
+        <!-- Actions -->
+        <div class="flex items-center gap-4">
+            <a
+            href="https://calendar.google.com/calendar/u/0/appointments/AcZssZ2HggnCgedQTnordiqL_eYqyQ07DpfKlRZlPXM="
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden sm:flex min-w-[120px] items-center justify-center rounded-lg text-white bg-primary h-10 px-5 text-sm font-bold shadow-lg shadow-primary/20 hover:scale-105 transition-transform">
+            Reservar Cita
+            <span class="material-symbols-outlined ml-1 text-xl">calendar_today</span>
+            </a>
+
+            <!-- Mobile menu button -->
+ <button 
+    id="menu-toggle" 
+    class="flex items-center p-2 text-primary md:hidden focus:outline-none"
+    aria-label="Toggle menu"
+>
+    <span id="menu-icon" class="material-symbols-outlined text-3xl">menu</span>
+</button>
+        </div>
+        </header>
+
+<div
+    id="mobile-menu"
+    class="fixed top-[72px] left-0 right-0 z-40 hidden flex-col gap-4 bg-background-light/95 backdrop-blur-md border-b border-primary/10 px-6 py-8 md:hidden transition-all duration-300 ease-in-out"
+>
+    <a class="mobile-link text-base font-semibold hover:text-primary transition-colors py-2" href="/#QuienesSomos">Quiénes Somos</a>
+    <a class="mobile-link text-base font-semibold hover:text-primary transition-colors py-2" href="/#Terapias">Terapias</a>
+    <a class="mobile-link text-base font-semibold hover:text-primary transition-colors py-2" href="/#Horario">Horario</a>
+
+    <a
+        href="https://calendar.google.com/calendar/u/0/appointments/..."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="mt-4 flex items-center justify-center rounded-lg text-white bg-primary h-12 px-5 text-sm font-bold shadow-lg shadow-primary/20"
+    >
+        Reservar Cita
+        <span class="material-symbols-outlined ml-1 text-xl">calendar_today</span>
+    </a>
+</div>
+        <main class="flex-1 mt-16">
+<!-- Aviso legal -->
+ <section class="px-6 py-20 md:px-20 lg:px-40 bg-background-light">
+<div class="mx-auto max-w-[1200px]">
+<div class="mb-16 text-center">
+<h2 class="text-3xl font-black text-text-main md:text-4xl">Aviso legal</h2>
+<div class="mx-auto mt-4 h-1 w-20 rounded-full bg-primary"></div>
+</div>
+    <p class="mb-6">
+        En cumplimiento de lo dispuesto en el <strong class="text-gray-900">artículo 10 de la Ley 34/2002, de 11 de julio</strong>, 
+        de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSICE), se facilitan a continuación los datos identificativos de la titular del sitio web:
+    </p>
+
+    <div class="bg-background-light/50 border border-primary/10 rounded-xl p-6 mb-10 shadow-sm">
+        <ul class="space-y-3">
+            <li class="flex flex-col sm:flex-row sm:gap-2">
+                <span class="font-bold text-primary min-w-[180px]">Titular:</span> 
+                <span>María del Mar Mauriz Abuín</span>
+            </li>
+            <li class="flex flex-col sm:flex-row sm:gap-2">
+                <span class="font-bold text-primary min-w-[180px]">NIF:</span> 
+                <span>*****354W</span>
+            </li>
+            <li class="flex flex-col sm:flex-row sm:gap-2">
+                <span class="font-bold text-primary min-w-[180px]">Domicilio profesional:</span> 
+                <span>Calle de la Reina, 14 – 4º D (Lugo)</span>
+            </li>
+            <li class="flex flex-col sm:flex-row sm:gap-2">
+                <span class="font-bold text-primary min-w-[180px]">Correo electrónico:</span> 
+                <a href="mailto:marmaurizfisioterapia@gmail.com" class="text-primary hover:underline transition-all">marmaurizfisioterapia@gmail.com</a>
+            </li>
+            <li class="flex flex-col sm:flex-row sm:gap-2">
+                <span class="font-bold text-primary min-w-[180px]">Teléfono:</span> 
+                <span>696 754 525</span>
+            </li>
+        </ul>
+    </div>
+
+    <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+        <span class="w-8 h-[2px] bg-primary"></span>
+        Datos profesionales
+    </h2>
+
+    <ul class="list-disc pl-5 space-y-2 mb-10 text-gray-600">
+        <li><strong>Habilitación profesional:</strong> Fisioterapeuta colegiada nº 1042</li>
+        <li><strong>Titulación académica:</strong> Fisioterapia</li>
+        <li><strong>País de obtención:</strong> España</li>
+    </ul>
+
+    <div class="space-y-4 text-sm text-gray-500 border-t border-gray-100 pt-8">
+        <p>
+            El presente sitio web es titularidad de <strong class="text-gray-700">Mauriz Fisioterapia</strong> y tiene carácter 
+            meramente informativo, estando destinado al uso personal de los usuarios. 
+            Mediante este aviso legal se regulan las condiciones de acceso, navegación y uso del sitio web.
+        </p>
+
+        <p>
+            El acceso al sitio web implica la aceptación expresa de las presentes condiciones de uso y se realiza bajo la exclusiva responsabilidad del usuario. 
+            Dicho acceso no supone el inicio de una relación comercial entre Terapia Mar Mauriz y el usuario.
+        </p>
+
+        <p>
+            La titular del sitio web podrá ofrecer determinados servicios o productos que estarán sujetos a condiciones particulares propias, 
+            las cuales sustituirán o modificarán las presentes condiciones generales.
+        </p>
+    </div>
+</div>
+</section>
+ <!-- Footer -->
+        <footer class="bg-white px-6 py-16 md:px-20 lg:px-40 border-t border-primary/10">
+            <div class="mx-auto max-w-[1200px]">
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="flex-1">
+                        <div class="mb-6 flex items-center gap-3">
+                            <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-text-main">
+                                <span class="material-symbols-outlined text-xl">physical_therapy</span>
+                            </div>
+                            <h2 class="text-lg font-extrabold tracking-tight text-text-main">Mauriz
+                                <span class="text-primary">Fisioterapia</span>
+                            </h2>
+                        </div>
+                        <p class="text-sm leading-relaxed text-text-muted">
+                            Tu bienestar en las mejores manos. Más de ** años cuidando de la salud de los lucenses con
+                            profesionalidad y cercanía.
+                        </p>
+                        <p class="mt-8">RSC-27-001112</p>
+                    </div>
+
+                    <div class="flex-1">
+                        <ul>   
+                            <li><a class="hover:text-primary transition-colors" href="./aviso.html">Aviso Legal</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 border-t border-primary/10 pt-8 text-center text-xs text-text-muted">
+                <p>©2026 Mauriz Fisioterapia. Todos los derechos reservados.</p>
+            </div>
+    </div>
+    </footer>
+    </div>
+</body>
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#557C56",
+                        "accent": "#FF885B",
+                        "white": '#fafafa',
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#122016",
+                        "text-main": "#0f1a12",
+                        "text-muted": "#549263",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "sans": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+const menuIcon = document.getElementById('menu-icon');
+const mobileLinks = document.querySelectorAll('.mobile-link');
+
+function toggleMenu() {
+    const isOpen = !mobileMenu.classList.contains('hidden');
+    
+    if (isOpen) {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('flex');
+        menuIcon.textContent = 'menu';
+    } else {
+        mobileMenu.classList.remove('hidden');
+        mobileMenu.classList.add('flex');
+        menuIcon.textContent = 'close';
+    }
+}
+
+// Event Listeners
+menuToggle.addEventListener('click', toggleMenu);
+
+// Close menu when clicking a link
+mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (!mobileMenu.classList.contains('hidden')) {
+            toggleMenu();
+        }
+    });
+});
+</script>
+</html>
